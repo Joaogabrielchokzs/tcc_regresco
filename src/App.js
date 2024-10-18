@@ -7,6 +7,8 @@ import Sobre from './pages/sobre/sobre';
 import Produtos from './pages/produtos/produtos';
 import Carrinho from './pages/carrinho/carrinho'; 
 import Cabegalho from './pages/cabegalho/cabegalho';
+import Contato from './pages/contato/contatos';
+
 
 const App = () => {
   return (
@@ -18,6 +20,7 @@ const App = () => {
         <Route path="/produtos" element={<Produtos />} />
         <Route path="/carrinho" element={<Carrinho />} />
         <Route path="/cabegalho" element={<Cabegalho />} />
+        <Route path="/contatos" element={<Contato />} />
       </Routes>
     </Router>
   );
