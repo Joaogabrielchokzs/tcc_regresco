@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './produtos.scss';
-import Cabegalho from '../cabegalho/cabegalho'
+
 
 const products = [
   {
@@ -51,7 +51,7 @@ const Products = () => {
 
   return (
     <div className="products-container">
-       <Cabegalho/>
+    
       <h1>Nosso Cardápio de Produtos</h1>
       <div className="products-grid">
         {products.map((product) => (
