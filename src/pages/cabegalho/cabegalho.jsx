@@ -8,6 +8,7 @@ const Cabegalho = () => {
     <header className="header">
       <img src={logo} alt="Logo da Confeitaria" className="logo" />
       <nav className="nav">
+      <Link to="/Contato" className="nav-button">Contato</Link>
         <Link to="/Carrinho" className="nav-button">Carrinho</Link>
         <Link to="/Sobre" className="nav-button">Sobre nós</Link>
         <Link to="/Produtos" className="nav-button">Produtos</Link>
