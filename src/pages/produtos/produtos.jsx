@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import './produtos.scss';
+import bolo from '../image/bolo.jpeg'
+import chocolate from '../image/bolo da vo do break.jpg';
+import individuais from '../image/Doces Individuais.jpg';
+import combo from '../image/Combo de Festas.jpg';
 
 
 const products = [
@@ -8,7 +12,7 @@ const products = [
     name: 'Bolo de Chocolate',
     description: 'Delicioso bolo de chocolate com recheio cremoso.',
     price: 25.00,
-    image: 'link-to-chocolate-cake-image.jpg',
+    image: chocolate,
     type: 'bolo',
   },
   {
@@ -16,7 +20,7 @@ const products = [
     name: 'Bolo de Baunilha',
     description: 'Bolo leve de baunilha com cobertura de chantilly.',
     price: 20.00,
-    image: 'link-to-vanilla-cake-image.jpg',
+    image: bolo,
     type: 'bolo',
   },
   {
@@ -24,7 +28,7 @@ const products = [
     name: 'Doces Individuais',
     description: 'Uma seleção de doces variados para você saborear.',
     price: 3.00,
-    image: 'link-to-individual-sweets-image.jpg',
+    image: individuais,
     type: 'doce',
   },
   {
@@ -32,7 +36,7 @@ const products = [
     name: 'Combo de Festas',
     description: 'Bolo + 12 doces individuais a um preço especial.',
     price: 70.00,
-    image: 'link-to-party-combo-image.jpg',
+    image: combo,
     type: 'combo',
   },
 ];

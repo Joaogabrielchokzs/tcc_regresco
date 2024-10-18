@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './cabegalho.scss'; 
 import logo from '../image/Sabores da rua.png';
 
+
 const Cabegalho = () => {
   return (
     <header className="header">
