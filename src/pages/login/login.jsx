@@ -19,8 +19,13 @@ const Login = () => {
   };
 
   return (
+    <>
+  
+    <Cabegalho />
+
+
     <div className="login-container">
-             <Cabegalho />
+            
       <h1>{isAdmin ? 'Login Admin' : 'Login'}</h1>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
@@ -55,6 +60,7 @@ const Login = () => {
         </button>
       </form>
     </div>
+    </>
   );
 };
 

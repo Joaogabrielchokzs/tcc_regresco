@@ -1,8 +1,38 @@
-.buc{
-
-display: flex;
-border-radius: 49px;
-color: aqua;
-
-
-}
+.contact-container {
+    padding: 20px;
+    background-color: #f8f8f8;
+  
+    h1 {
+      color: #8e5b4f;
+    }
+  
+    .contact-info, .social-media, .location, .hours, .contact-form {
+      margin-bottom: 20px;
+    }
+  
+    .social-media a {
+      margin-right: 10px;
+    }
+  
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+  
+    .contact-form button {
+      padding: 10px;
+      background-color: #8e5b4f;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: #7a4a3b;
+      }
+    }
+  }
+  
