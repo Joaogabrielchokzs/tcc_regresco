@@ -6,7 +6,7 @@ import Cabegalho from '../cabegalho/cabegalho'
 const Home = () => {
   return (
     <div className="home-container">
-    <Cabegalho/>
+    <Cabegalho/> 
       <section className="dynamic-section">
        
         <div className="ideas">

@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import './produtos.scss';
-import bolo from '../image/bolo.jpeg'
+import bolo from '../image/bolo.jpeg';
 import chocolate from '../image/bolo da vo do break.jpg';
 import individuais from '../image/Doces Individuais.jpg';
 import combo from '../image/Combo de Festas.jpg';
-import Cabegalho from '../cabegalho/cabegalho'
+import Cabegalho from '../cabegalho/cabegalho';
 
 const products = [
   {
@@ -55,12 +55,14 @@ const Products = () => {
 
   return (
     <div className="products-container">
-       <Cabegalho />
+      <Cabegalho />
       <h1>Nosso Cardápio de Produtos</h1>
       <div className="products-grid">
         {products.map((product) => (
           <div key={product.id} className="product-card">
-            <img className='image-container' src={product.image} alt={product.name} />
+            <div className="image-container">
+              <img src={product.image} alt={product.name} />
+            </div>
             <h3>{product.name}</h3>
             <p>{product.description}</p>
             <p className="price">R$ {product.price.toFixed(2)}</p>
@@ -91,10 +93,12 @@ const Products = () => {
                 <input type="text" placeholder="Ex: Brigadeiro" />
               </label>
             )}
-            <button className="view-button">Ver Produto</button>
-            <button className="add-button" onClick={() => handleAddToCart(product)}>
-              Adicionar ao Carrinho
-            </button>
+            <div className="button-container">
+              <button className="view-button">Ver Produto</button>
+              <button className="add-button" onClick={() => handleAddToCart(product)}>
+                Adicionar ao Carrinho
+              </button>
+            </div>
           </div>
         ))}
       </div>

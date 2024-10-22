@@ -3,11 +3,14 @@ import './contato.scss';
 import Cabegalho from '../cabegalho/cabegalho'
 
 const Contato = () => {
-    <>
-     <Cabegalho/>
+   
    
   return (
+    <><Cabegalho/>
     <div className="contact-container">
+      <div className=''header> 
+ 
+      </div>
       <h1>Entre em Contato Conosco</h1>
       <p>Estamos aqui para responder suas dúvidas e atender seus pedidos!</p>
       juh
@@ -56,9 +59,8 @@ const Contato = () => {
         </form>
       </div>
     </div>
-    
+</>    
   );
-  </>
 };
 
 export default Contato;
