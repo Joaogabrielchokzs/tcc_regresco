@@ -10,7 +10,7 @@ const Contato = () => {
     <div className="contact-container">
       <h1>Entre em Contato Conosco</h1>
       <p>Estamos aqui para responder suas dúvidas e atender seus pedidos!</p>
-      
+      juh
       <div className="contact-info">
         <p><strong>Telefone:</strong> (xx) xxxx-xxxx</p>
         <p><strong>E-mail:</strong> contato@confeitaria.com</p>
