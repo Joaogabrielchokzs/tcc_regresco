@@ -16,9 +16,7 @@ const Cabecalho = () => {
         <div>
           <Link to="/Produtos" className="produtos">Produtos</Link>
         </div>
-        <div>
-          <Link to="/Carrinho" className="carrinho">Carrinho</Link>
-        </div>
+       
         <div>
           <Link to="/Login" className="login">Login</Link>
         </div>

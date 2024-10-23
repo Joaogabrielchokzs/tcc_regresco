@@ -30,10 +30,11 @@ const About = () => {
 
   return (
     <div className="about-container">
-            <Cabegalho />
+      <Cabegalho />
       <header className="about-header">
-        <h1>Sobre Nós</h1>
-        <p>Na nossa confeitaria, cada doce é uma obra de arte feita com amor e dedicação.</p>
+        <div className='texto'>  <h1>Sobre Nós</h1>
+          <p>Na nossa confeitaria, cada doce é uma obra de arte feita com amor e dedicação.</p>
+        </div>
       </header>
 
       <section className="about-differentials">
