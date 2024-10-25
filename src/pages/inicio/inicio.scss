@@ -1,16 +1,46 @@
-.frasedeefeito{
-margin-top: 20%;
-text-align: center;
+.frasedeefeito {
+  margin-top: 20%;
+  text-align: center;
 
+  .h1 {
+    color: #800f2f;
+    font-size: 40px;
+  }
+
+  .cards-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+
+    .card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      padding: 20px;
+      width: 200px;
+
+      img {
+        border-radius: 8px;
+        max-width: 100%;
+        height: auto;
+      }
+
+      h3 {
+        margin: 10px 0;
+        font-size: 1.5em;
+        color: #800f2f; // Mantendo a paleta de cores
+      }
+
+      p {
+        color: #666;
+      }
+    }
+  }
 }
 
-.h1{
-
-color: #800f2f;
-font-size: 40px;
-}
-
-// src/inicio.scss
+// Container geral
 .home-container {
   font-family: Arial, sans-serif;
   padding: 20px;
@@ -27,13 +57,6 @@ font-size: 40px;
     .ideas {
       h2 {
         color: #333;
-      }
-
-      .rounded-image {
-        border-radius: 15px; /* Arredondando as bordas da imagem */
-        max-width: 100%; /* Faz a imagem ser responsiva */
-        height: auto; /* Mantém a proporção da imagem */
-        margin-bottom: 20px; /* Espaço abaixo da imagem */
       }
 
       ul {

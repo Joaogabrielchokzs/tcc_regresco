@@ -13,11 +13,18 @@ const INICIO = () => {
       <h2 className='text'>
         Transformando cada doce em uma celebração de sabores, onde a tradição se encontra com a inovação em cada fatia!
       </h2>
-      <div className='image-gallery'>
-        <img src={Sonho} alt="Sonho" className='image' />
-        <img src={salgado} alt="Salgado" className='image' />
-        <img src={doces} alt="Doces Individuais" className='image' />
+      <div className='sonho'>
+        <img src={Sonho} alt="Sonho" />
       </div>
+      <div className='salgado'>
+        <img src={salgado} alt="Salgado" />
+      </div>
+
+      <div className='brigadeiro'>
+        <img src={doces} alt="Doces Individuais"  />
+      </div>
+
+
     </div>
   );
 };
