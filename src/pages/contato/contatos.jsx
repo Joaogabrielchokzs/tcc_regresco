@@ -6,6 +6,7 @@ import x from '../image/x.png';
 import wats from '../image/wats.png';
 import face from '../image/face.png';
 
+
 const Contato = () => {
   return (
     <>
@@ -40,6 +41,7 @@ const Contato = () => {
           </div>
         </div>
       </div>
+ 
     </>
   );
 };

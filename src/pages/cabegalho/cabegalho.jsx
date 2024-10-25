@@ -10,6 +10,11 @@ const Cabecalho = () => {
     <div className="header">
       <img src={logo} alt="Logo da Confeitaria" className="logo" />
       <div className="nav">
+
+      <div>
+          <Link to="/" className="home">Home</Link>
+        </div>
+
         <div>
           <Link to="/Sobre" className="sobre">Sobre nós</Link>
         </div>

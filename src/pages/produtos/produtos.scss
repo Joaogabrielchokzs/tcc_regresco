@@ -1,9 +1,18 @@
 .products-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  background-color: #f8f8f8;
+  background: linear-gradient(to right,  #FFF0F3, #800F2F);
+
+  
+  
+
 
   h1 {
     font-size: 2.5rem;
@@ -13,33 +22,33 @@
 
   .products-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Mantém a largura mínima */
-    gap: 20px; /* Espaço entre os cards */
-    width: 100%; /* Garante que o grid use toda a largura disponível */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
 
     .product-card {
       margin-top: 130px;
-      background-color: #e9d9d5;
+ background-color: #FFF0F3;
       border-radius: 34px;
       padding: 15px;
       text-align: center;
       transition: transform 0.3s;
       display: flex;
-      flex-direction: column; /* Alinha os elementos verticalmente */
-      justify-content: space-between; /* Garante que os botões fiquem na parte inferior */
-      height: 500px; /* Aumenta a altura fixa dos cards */
+      flex-direction: column;
+      justify-content: space-between;
+      height: 500px;
 
       .image-container {
         width: 100%;
-        height: 300px; /* Aumenta a altura das imagens */
+        height: 300px;
         overflow: hidden;
 
         img {
           width: 100%;
-          height: 100%; 
-          object-fit: contain; /* Ajusta a imagem para caber no contêiner sem cortar */
-          display: block; 
-          border-radius: 3px; 
+          height: 100%;
+          object-fit: contain;
+          display: block;
+          border-radius: 3px;
         }
       }
 
@@ -62,23 +71,35 @@
       .button-container {
         display: flex;
         justify-content: center;
-        margin-top: auto; /* Faz com que o espaço acima dos botões seja flexível */
+        margin-top: auto;
 
         .view-button,
-        .add-button {
-          margin: 0 5px; /* Margem lateral para os botões */
+        .add-button,
+        .increase-button,
+        .decrease-button {
+          margin: 0 5px;
           padding: 10px;
           background-color: #f25c54;
-          color: #fff; /* Melhoria na legibilidade */
+          color: #fff;
           border: none;
-          border-radius: 5px;
+          border-radius: 34px;
           cursor: pointer;
           transition: background-color 0.3s;
-          border-radius: 34px;
 
           &:hover {
-            background-color: #7a4a3b; /* Mantenha a cor hover */
+            background-color: #7a4a3b;
           }
+        }
+
+        .increase-button,
+        .decrease-button {
+          background-color: black;
+          color: #fff;
+        }
+
+        .increase-button:hover,
+        .decrease-button:hover {
+          background-color: #333;
         }
       }
     }
@@ -90,7 +111,7 @@
     }
 
     .product-card {
-      height: 400px; /* Ajusta a altura em telas menores */
+      height: 400px;
     }
 
     .product-card h3 {
@@ -104,7 +125,7 @@
     }
 
     .product-card {
-      height: 350px; /* Ajusta a altura para telas pequenas */
+      height: 350px;
     }
 
     .product-card h3 {
